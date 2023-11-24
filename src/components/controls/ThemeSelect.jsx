@@ -1,16 +1,16 @@
-import { themes } from "@/options";
+import { themes } from "@/options"
 import {
   Select,
-  SelectTrigger,
-  SelectValue,
   SelectContent,
   SelectItem,
-} from "../ui/select";
-import useStore from "@/store";
-import { cn } from "@/lib/utils";
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select"
+import { cn } from "@/lib/utils"
+import useStore from "@/store"
 
 export default function ThemeSelect() {
-  const theme = useStore((state) => state.theme);
+  const theme = useStore((state) => state.theme)
 
   return (
     <div>
@@ -36,5 +36,5 @@ export default function ThemeSelect() {
         </SelectContent>
       </Select>
     </div>
-  );
+  )
 }
